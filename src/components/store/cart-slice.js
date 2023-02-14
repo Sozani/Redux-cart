@@ -19,6 +19,7 @@ createSlice({
         });
       } else {
         existingItem.quantity++;
+        existingItem.totalPrice = existingItem.totalPrice + newItem.price;
       }
     },
     removeItemFromCart() {},
