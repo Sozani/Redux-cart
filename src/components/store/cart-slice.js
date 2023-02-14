@@ -9,3 +9,4 @@ const uiSlice = createSlice({
     },
   },
 });
+export default uiSlice;
