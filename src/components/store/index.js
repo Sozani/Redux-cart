@@ -1,3 +1,5 @@
 import { configeStore } from "@reduxjs/toolkit";
-
-configeStore();
+import uiSlice from "./ui-slice";
+configeStore({
+  reducer: { ui: uiSlice.reducer },
+});
