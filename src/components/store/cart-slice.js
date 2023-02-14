@@ -15,6 +15,7 @@ createSlice({
           price: newItem.price,
           quantity: 0,
           totalPrice: newItem.price,
+          name: newItem.title,
         });
       }
     },
