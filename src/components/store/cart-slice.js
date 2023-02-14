@@ -13,6 +13,7 @@ createSlice({
         state.items.push({
           itemId: newItem.id,
           price: newItem.price,
+          quantity: 0,
         });
       }
     },
