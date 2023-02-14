@@ -7,5 +7,6 @@ createSlice({
   },
   reducers: {
     addItemToCart() {},
+    removeItemFromCart() {},
   },
 });
