@@ -6,7 +6,9 @@ createSlice({
     items: [],
   },
   reducers: {
-    addItemToCart() {},
+    addItemToCart(state, action) {
+      const newItem = action.payload;
+    },
     removeItemFromCart() {},
   },
 });
