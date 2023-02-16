@@ -3,13 +3,13 @@ import classes from "./Products.module.css";
 const DUMMY_PRODUCTS = [
   {
     id: "p1",
-    prize: 6,
+    price: 6,
     title: "My First book",
     description: "This is my first I wrote.",
   },
   {
     id: "p2",
-    prize: 5,
+    price: 5,
     title: "My second book",
     description: "This is my second I wrote.",
   },
@@ -22,16 +22,12 @@ const Products = (props) => {
         {DUMMY_PRODUCTS.map((product) => (
           <ProductItem
             key={product.id}
+            id={product.id}
             title={product.title}
-            prize={product.prize}
+            price={product.price}
             description={product.description}
           />
         ))}
-        <ProductItem
-          title="Test"
-          price={6}
-          description="This is a first product - amazing!"
-        />
       </ul>
     </section>
   );
