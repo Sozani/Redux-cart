@@ -13,7 +13,7 @@ const cartSlice = createSlice({
       state.totalQuantity++;
       if (!existingItem) {
         state.items.push({
-          itemId: newItem.id,
+          id: newItem.id,
           price: newItem.price,
           quantity: 1,
           totalPrice: newItem.price,
@@ -37,5 +37,5 @@ const cartSlice = createSlice({
     },
   },
 });
-export const CartActions = cartSlice.actions;
+export const cartActions = cartSlice.actions;
 export default cartSlice;
